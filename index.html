@@ -1,0 +1,31 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="app">
+            <header>
+                <h1>Generate a <br><span id="h1-line2">random password</span></h1>
+                <h4>Never use an insecure password again</h4>
+            </header>
+            <main>
+                <div class="settings">
+                    <input placeholder="Lenght" type="number" min="6" id="lenght"></input>
+                    <span id="mandatory-input"></span>
+                    <br>
+                    <p>Symbols</p>
+                    <input type="checkbox" onclick="boolSymbols()" id="checkbox" checked></input>
+                    <p id="numbers">Numbers</p>
+                    <input type="checkbox" onclick="boolNumbers()" id="checkbox" checked></input>
+                    <button>Generate password</button>
+                </div>
+                <span id="line"></span>
+                <div class="output">
+                    <p id="p-1">Password 1</p>
+                    <p id="p-2">Password 2</p>
+                </div>            
+            </main>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
